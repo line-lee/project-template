@@ -1,0 +1,10 @@
+不同包导入方法：
+1、被导入的proto文件需在 package proto; 之前增加：option  go_package = "cicada/proto";//设置go包的可选项
+2、命令需增加：paths=source_relative，如下：
+protoc -I=./ -I=D:/project/third-party/src;D:/project/cicada_dev_v5.6.9/ --gogofaster_out=plugins=grpc,paths=source_relative:./ admin.proto
+
+
+protoc --proto_path=. -I=E:\go_path\local --gogofaster_out=plugins=grpc:./
+
+
+protoc --proto_path=.  --gogofaster_out=plugins=grpc:./

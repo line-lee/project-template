@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/web/api/v1/example",
+    "Method": "GET",
+    "describe": "接口限制示例",
+    "menu_id": 1,
+    "page_id": 1,
+    "button_id": 1
+  }
+]

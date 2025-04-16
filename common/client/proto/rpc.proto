@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package client;
+
+service Service {
+  rpc REQ (Request) returns (Response);
+}
+
+message Request {
+  // GRPC注册的服务，比如 core
+  string Service = 1;
+  // 操作的模块，例如：管理员（admin），app等
+  int64 module = 2;
+  // 模块下的路由
+  int64 api = 3;
+  // 参数流
+  bytes data = 4;
+}
+
+message Response {
+  bytes data = 1;
+}

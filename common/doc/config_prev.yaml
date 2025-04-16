@@ -1,0 +1,35 @@
+core:
+  gateways:
+    web:
+      http: 7300
+      grpc: 7301
+    open:
+      http: 7302
+      grpc: 7303
+  services:
+    variety:
+      http: 7400
+      grpc: 7401
+    trip:
+      http: 7402
+      grpc: 7403
+  micos:
+    fusion:
+      http: 7500
+      grpc: 7501
+mysql_config:
+  host: "host"
+  port: 3306
+  username: "username"
+  password: "password"
+redis_config:
+  host: "host"
+  port: 6379
+  password: "password"
+  db: 0
+kafka_config:
+  servers: "servers"
+qiniu_config:
+  access_key: "access_key"
+  secret_key: "secret_key"
+  bucket: "bucket"
